@@ -25,6 +25,14 @@ exports.compose = function compose(tjekkers) {
     }
 }
 
+exports.make = function make(fn) {
+    return function(value) {
+        var result = fn(value)
+        if (!result) return valid
+        return createErr(result)
+    }
+}
+
 exports.minNumber = function minNumber(n) {
     return function minNumber(value) {
         if (Number(value) >= n) return valid
