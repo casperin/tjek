@@ -1,0 +1,16 @@
+{
+  "name": "tjek",
+  "version": "1.0.0",
+  "description": "Validate inputs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test",
+    "prettier": "prettier --no-semi --tab-width 4 --write index.js"
+  },
+  "author": "Gorm Casper",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.7.4",
+    "tape": "^4.8.0"
+  }
+}
